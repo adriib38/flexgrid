@@ -1,0 +1,58 @@
+
+.contenedor {
+    background-color: aqua;
+
+    width: 60%;
+    height: 200px;
+
+    display: flex;
+
+/* flex-direction: row;  DEFECTO */
+/* flex-direction: row-reverse; */
+/* flex-direction: column */
+/* flex-direction: column-reverse */
+    
+    flex-wrap: wrap; /* Si no caben en el contenedor bajan de linea. */
+/*  flex-wrap: no-wrap */
+/*  flex-wrap: wrap-reverse Invierte el orden */
+
+/*  ALINEAR HORIZONTAL  */
+/*  justify-content: flex-end; */
+/*  justify-content: center; */
+/*  justify-content: space-between; */
+/*  justify-content: space-around; */
+
+/*  ALINEAR VERTICAL    */
+/*  align-items: center;  */
+/*  align-items: flex-start;  */
+/*  align-items: flex-end;  */
+/*  align-items: baseline;  */
+/*  align-items: stretch; No height los hijos */
+
+/*  ALIGN CONTENT   */
+    align-content: center;
+}
+
+
+
+.contenedor div {
+    background-color: red;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+
+/*  flex-grow: 1; Se reparte todo el espacio entre los elementos */
+/*  flex-shrink: 1; */
+/* flex-basis: 20%; Se reparte el espacio proporcionalmente */
+
+
+/*  align-self: flex-start;   */
+/*  align-self: flex-end;   */
+/*  align-self: center;   */
+/*  align-self: stretch;  */
+/*  align-self: baseline; */
+}
+
+.contenedor div:nth-child(1) {
+   /* order: 5; Cambia el nombre de un elemento*/
+}
